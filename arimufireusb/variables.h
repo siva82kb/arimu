@@ -26,7 +26,7 @@
 
 // Device name
 //char* ARIMUNAME = "ARIMU_Right";
-char* ARIMUNAME = "ARIMU_Left";
+char* ARIMUNAME = "ARIMU_02";
 
 //Metadata for sending files
 const byte DATALINE = 0;
@@ -102,8 +102,8 @@ const byte PIN_SPI_CIPO = 6;
 const byte PIN_SPI_COPI = 7;
 const byte PIN_VIN_MONITOR = 34;
 const byte PIN_MICROSD_CHIP_SELECT = 23;
-const byte BLUE_LED = 19;
-const byte RED_LED = 29;
+const byte BLUE_LED = 29; //19;
+const byte RED_LED = 19; //29;
 
 
 // Error Status Structure.
@@ -173,6 +173,7 @@ DualDataBuffer _dataBuffer;
 microsunion_t _microsData;
 //epochunion_t _epochData;
 rtcunion_t _rtcData;
+shortrtcunion_t _shortRtcData;
 imuunion_t _imuData;
 
 #define USE_SPI                     // Uncomment this to use SPI

@@ -271,6 +271,7 @@ void handle_listfiles() {
                     // Payload too full to add string. Send the current
                     // payload and start a new one.
                     jedi.writePayload();
+                    // Start the new packet.
                     _initNewPayload(LISTFILES);
                     _addStringToPayload(_fnamestr.c_str());
                 }
@@ -568,7 +569,7 @@ void _sendFileData(char* fname) {
     /*
      * 2. SEND FILE SEGMENTS.
      */
-    uint8_t _linesPerSeg = 5;
+    uint8_t _linesPerSeg = 12;
     uint8_t _bytesToRead = _linesPerSeg * _dataBuffer.packetSize;
     uint8_t _bytesRead;
     unsigned int _bytesSent = 0;
@@ -607,35 +608,12 @@ void _sendOneFileSegment(byte *fileData, uint8_t bytesRead, uint8_t prcnt) {
 /*
  * Send IMU data stream in the STREAMING mode.
  */
-//void _streamImuDataOut(imuunion_t *imuData,
-//                       epochunion_t *epochData,
-//                       microsunion_t *microsData) {
-//    _initNewPayload(STARTSTREAM);
-//    // Epoch data
-//    for (int i = 0; i < 4; i++) {
-//        jedi.addByte(epochData->bytes[i]);
-//    }
-//    // Micros data.
-//    for (int i = 0; i < 4; i++) {
-//        jedi.addByte(microsData->bytes[i]);
-//    }
-//    // IMU data.
-//    for (int i = 0; i < 12; i++) {
-//        jedi.addByte(imuData->bytes[i]);
-//    }
-//    jedi.writePayload();
-//}
 void _streamImuDataOut(imuunion_t *imuData,
-                       rtcunion_t *rtcData,
-                       microsunion_t *microsData) {
+                       shortrtcunion_t *shortRtcData) {
     _initNewPayload(STARTSTREAM);
     // Epoch data
-    for (int i = 0; i < 28; i++) {
-        jedi.addByte(rtcData->bytes[i]);
-    }
-    // Micros data.
-    for (int i = 0; i < 4; i++) {
-        jedi.addByte(microsData->bytes[i]);
+    for (int i = 0; i < 7; i++) {
+        jedi.addByte(shortRtcData->values[i]);
     }
     // IMU data.
     for (int i = 0; i < 12; i++) {

@@ -57,8 +57,7 @@ void readIMU() {
   if (ICM.dataReady()) {
     ICM.getAGMT();
     readTime();
-    // _epochData.epoch = datetime;
-    // _epochData.epoch = datetime;
+    update_short_rtc_bytes();
     _imuData.accgyr[0] = ICM.agmt.acc.axes.x;
     _imuData.accgyr[1] = ICM.agmt.acc.axes.y;
     _imuData.accgyr[2] = ICM.agmt.acc.axes.z;

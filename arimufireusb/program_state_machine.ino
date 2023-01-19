@@ -143,7 +143,7 @@ void handleNormalExperiment()
         readIMU();
         // Write to data buffer.
         _microsData.microsecs = prgTimes.normExpt;
-        if (_dataBuffer.addLine(&_imuData, &_rtcData, &_microsData)) {
+        if (_dataBuffer.addLine(&_imuData, &_shortRtcData)) {
             writePageToFile();
         }
         prgTimes.normExpt = micros();
@@ -158,7 +158,7 @@ void handleStreaming () {
         readIMU();
         // Send data via the serial port.
         _microsData.microsecs = prgTimes.normExpt;
-        _streamImuDataOut(&_imuData, &_rtcData, &_microsData);
+        _streamImuDataOut(&_imuData, &_shortRtcData);
         prgTimes.normExpt = micros();
     }
 }

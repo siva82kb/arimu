@@ -30,6 +30,11 @@ typedef union {
     uint8_t bytes[7 * 4];
 } rtcunion_t;
 
+// RTC short data
+typedef struct {
+    byte values[7];
+} shortrtcunion_t;
+
 // micros data
 typedef union {
     unsigned long microsecs;
@@ -38,17 +43,18 @@ typedef union {
 
 class DualDataBuffer {
     public:
-        static const uint8_t packetSize = 7 * 4 + 4 + 12;
+        static const uint8_t packetSize = 7 + 12;
         static const uint8_t noOfPages = 2;
         static const uint8_t linesPerPage = 200;
         static const uint16_t pageSize = packetSize * linesPerPage;
         const uint8_t *readyPage;
-//        const ulongunion_t *readyEpochPage;
         DualDataBuffer();
         void initPages();
         bool addLine(imuunion_t *imuData,
                      rtcunion_t *rtcData,
                      microsunion_t *microsData);
+        bool addLine(imuunion_t *imuData,
+                     shortrtcunion_t *shortRtcData);
         void doneWithReadyPages();
     private:
         bool _ready;

@@ -16,6 +16,15 @@ void readTime() {
   _rtcData.values[6] = rtc.hundredths;
 }
 
+// Update the short RTC bytes array based on the current RTC data.
+void update_short_rtc_bytes() {
+    // This function assumes that the short RTC
+    // bytes.
+    for (int i = 0; i < 7; i++) {
+        _shortRtcData.values[i] = (byte)_rtcData.values[i];
+    }
+}
+
 // Update RTC flag.
 void updateRtcErrFlag() {
     readTime();

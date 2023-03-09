@@ -16,7 +16,7 @@
 #include "DataBuffer.h"
 
 #define DATA_FILE_INDEX_MAX     999
-#define DATA_FILE_PREFIX        "data"
+#define DATA_FILE_PREFIX        "data" 
 #define DATA_FILE_SUFFIX        ".bin"
 #define SD_MAX_FILE_SIZE        5 * 1024 * 1024
 #define VALIDEPOCH              1658547828  // Saturday, July 23, 2022 9:13:48 AM GMT+05:30
@@ -26,7 +26,7 @@
 
 // Device name
 //char* ARIMUNAME = "ARIMU_Right";
-char* ARIMUNAME = "ARIMU_02";
+char* ARIMUNAME = "ARIMU_RIGHT";
 
 //Metadata for sending files
 const byte DATALINE = 0;

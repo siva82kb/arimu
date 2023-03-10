@@ -5,7 +5,15 @@ ARIMU or _Arm use IMU_ is a wearable movement sensor based on the versatile, ope
 We first describe the device ARIMU, and then provide the details of the current version of the firmware.
 
 ## ARIMU 
-Arm Use IMU is essentially the OpenLog Artemis with custom firmware and enclosure. The current version of the device uses only the onboard IMU sensor, RTC, and the microSD card logging modules. 
+Arm Use IMU is essentially the OpenLog Artemis with custom firmware and enclosure. The current version of the device uses only the onboard IMU sensor, RTC, and microSD card logging modules. ARIMU's schematic is shown in the following figure.
+
+<center>
+
+![alt text](figs/arimu-schem.png)
+
+</center>
+
+The current version of ARIMU uses a 600mAh Lithium Polymer battery. The OpenLog board, the battery, and the switch are placed in a 3D-printed enclosure with holders for straps. The
 
 ## ARIMUFire 
 

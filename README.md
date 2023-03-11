@@ -21,9 +21,7 @@ The 3D model file for the ARIMU enclosure and its components can be found here.
 
 Here is a video of the physical prototype of a fully assembled ARIMU with the straps for donning it around the wrist.
 
-<center>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/yX8sNjaKGzg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-</center>
+[![Video Image](fig/../figs/arimu-dismantle-video.png)](https://www.youtube.com/embed/yX8sNjaKGzg)
 
 ## ARIMUFire 
 

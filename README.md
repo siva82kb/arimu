@@ -35,8 +35,8 @@ The custom firmware - ARIMUFire - is implemented to allow for all these features
 There are several device parameters that are used in the current firmware.
 - **Device name**: A name can be assigned to individual devices.
 - **Subject name**: The user to which the device can be assigned; this can be read and set through a USB serial protocol.
-- **Max. size of a file**: There is maximum size for individual files logged onto the SD card. If the size of the current file exceed this, the device creates a new file.
-- **Date time threshold**: A threshold for the datetime is set, and whenever the RTC value is below this, then the device will set and error flag to indicate that the RTC is out of sync.
+- **Max. size of a file**: There is a maximum size limit for individual files logged onto the SD card. If the size of the current file exceeds this, the device creates a new file.
+- **Date time threshold**: A threshold for the datetime is set, and whenever the RTC value goes below this, the device will set an error flag to indicate that the RTC is out of sync.
 
 ### Data logging 
 At every loop execution, ARIMUFire logs the RTC timestamp, the three values of the accelerometer, and the three values of the gyroscope. The data is logged in a binary format, which has a header, and the data packets with timestamps, accelerometer, and gyroscope values. Each data packet is 19 bytes long as shown below:

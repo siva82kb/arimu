@@ -43,41 +43,41 @@ At every loop execution, ARIMUFire logs the RTC timestamp, the three values of t
 <table>
 <thead>
   <tr>
-    <th style="font-size: 12px" colspan="7">Timestamp (7 bytes)</th>
-    <th style="font-size: 12px" colspan="3">Accelerometer (6 bytes)</th>
-    <th style="font-size: 12px" colspan="3">Gyroscope (6 bytes)</th>
+    <th style="font-size: 10px" colspan="7">Timestamp (7 bytes)</th>
+    <th style="font-size: 10px" colspan="3">Accelerometer (6 bytes)</th>
+    <th style="font-size: 10px" colspan="3">Gyroscope (6 bytes)</th>
   </tr>
 </thead>
 <tbody>
   <tr bgcolor="#EEEEEE">
-    <td style="font-size: 12px" align="center">Year</td>
-    <td style="font-size: 12px" align="center">Month</td>
-    <td style="font-size: 12px" align="center">Day</td>
-    <td style="font-size: 12px" align="center">Hour</td>
-    <td style="font-size: 12px" align="center">Minute</td>
-    <td style="font-size: 12px" align="center">Second</td>
-    <td style="font-size: 12px" align="center">10milsec</td>
-    <td style="font-size: 12px" align="center">ax</td>
-    <td style="font-size: 12px" align="center">ay</td>
-    <td style="font-size: 12px" align="center">az</td>
-    <td style="font-size: 12px" align="center">gx</td>
-    <td style="font-size: 12px" align="center">gy</td>
-    <td style="font-size: 12px" align="center">gz</td>
+    <td style="font-size: 10px" align="center">Year</td>
+    <td style="font-size: 10px" align="center">Month</td>
+    <td style="font-size: 10px" align="center">Day</td>
+    <td style="font-size: 10px" align="center">Hour</td>
+    <td style="font-size: 10px" align="center">Minute</td>
+    <td style="font-size: 10px" align="center">Second</td>
+    <td style="font-size: 10px" align="center">10milsec</td>
+    <td style="font-size: 10px" align="center">ax</td>
+    <td style="font-size: 10px" align="center">ay</td>
+    <td style="font-size: 10px" align="center">az</td>
+    <td style="font-size: 10px" align="center">gx</td>
+    <td style="font-size: 10px" align="center">gy</td>
+    <td style="font-size: 10px" align="center">gz</td>
   </tr>
   <tr>
-    <td style="font-size: 12px" align="center">1 byte</td>
-    <td style="font-size: 12px" align="center">1 byte</td>
-    <td style="font-size: 12px" align="center">1 byte</td>
-    <td style="font-size: 12px" align="center">1 byte</td>
-    <td style="font-size: 12px" align="center">1 byte</td>
-    <td style="font-size: 12px" align="center">1 byte</td>
-    <td style="font-size: 12px" align="center">1 byte</td>
-    <td style="font-size: 12px" align="center">2 bytes</td>
-    <td style="font-size: 12px" align="center">2 bytes</td>
-    <td style="font-size: 12px" align="center">2 bytes</td>
-    <td style="font-size: 12px" align="center">2 bytes</td>
-    <td style="font-size: 12px" align="center">2 bytes</td>
-    <td style="font-size: 12px" align="center">2 bytes</td>
+    <td style="font-size: 10px" align="center">1 byte</td>
+    <td style="font-size: 10px" align="center">1 byte</td>
+    <td style="font-size: 10px" align="center">1 byte</td>
+    <td style="font-size: 10px" align="center">1 byte</td>
+    <td style="font-size: 10px" align="center">1 byte</td>
+    <td style="font-size: 10px" align="center">1 byte</td>
+    <td style="font-size: 10px" align="center">1 byte</td>
+    <td style="font-size: 10px" align="center">2 bytes</td>
+    <td style="font-size: 10px" align="center">2 bytes</td>
+    <td style="font-size: 10px" align="center">2 bytes</td>
+    <td style="font-size: 10px" align="center">2 bytes</td>
+    <td style="font-size: 10px" align="center">2 bytes</td>
+    <td style="font-size: 10px" align="center">2 bytes</td>
   </tr>
 </tbody>
 </table>
@@ -89,26 +89,26 @@ There is a red and blue LED on the OpenLog which are used to indicate the mode o
 <table>
 <thead>
   <tr bgcolor="#EEEEEE">
-    <th style="font-size: 12px" align="center">Mode</th>
-    <th style="font-size: 12px" align="center">Red LED</th>
-    <th style="font-size: 12px" align="center">Blue LED</th>
+    <th style="font-size: 10px" align="center">Mode</th>
+    <th style="font-size: 10px" align="center">Red LED</th>
+    <th style="font-size: 10px" align="center">Blue LED</th>
   </tr>
 </thead>
 <tbody>
   <tr>
-    <td style="font-size: 12px" align="center">RTC error/SD card error</td>
-    <td style="font-size: 12px" align="center">Fast blinking</td>
-    <td style="font-size: 12px" align="center">Fast blinking</td>
+    <td style="font-size: 10px" align="center">RTC error/SD card error</td>
+    <td style="font-size: 10px" align="center">Fast blinking</td>
+    <td style="font-size: 10px" align="center">Fast blinking</td>
   </tr>
   <tr>
-    <td style="font-size: 12px" align="center">Normal SD logging</td>
-    <td style="font-size: 12px" align="center">Off</td>
-    <td style="font-size: 12px" align="center">Blinks every<br>5 sec</td>
+    <td style="font-size: 10px" align="center">Normal SD logging</td>
+    <td style="font-size: 10px" align="center">Off</td>
+    <td style="font-size: 10px" align="center">Blinks every<br>5 sec</td>
   </tr>
   <tr>
-    <td style="font-size: 12px" align="center">Data communication<br>(via USB serial)</td>
-    <td style="font-size: 12px" align="center">On</td>
-    <td style="font-size: 12px" align="center">On</td>
+    <td style="font-size: 10px" align="center">Data communication<br>(via USB serial)</td>
+    <td style="font-size: 10px" align="center">On</td>
+    <td style="font-size: 10px" align="center">On</td>
   </tr>
 </tbody>
 </table>

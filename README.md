@@ -15,9 +15,10 @@ The current version of ARIMU uses a 600mAh Lithium Polymer battery. The OpenLog 
 
 <p align="center">
   <img width="300" src="figs/arimu-3dmodel.gif">
+  <img width="300" src="figs/arimu_dimensions.png">
 </p>
 
-The 3D model file for the ARIMU enclosure and its components can be found here.
+The 3D model file for the ARIMU enclosure and its components can be found [here](3d_files).
 
 Here is a video of the physical prototype of a fully assembled ARIMU with the straps for donning it around the wrist.
 
